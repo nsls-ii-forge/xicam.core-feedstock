@@ -24,6 +24,8 @@ requirements:
     - dask
     - databroker
     - distributed
+    - pyqt >=5
+    - qtpy
 
 test:
   imports:
@@ -39,4 +41,6 @@ about:
   license_file: LICENSE.md
   summary: The CAMERA platform for synchrotron data management, visualization, and reduction.
   description: |
-    The xicam.core package contains all backend code of the Xi-cam platform, as part of the xicam namespace package. For the gui components, see "xicam.gui".
+    The xicam.core package contains all backend code of the Xi-cam platform, as
+    part of the xicam namespace package. For the gui components, see
+    "xicam.gui".
