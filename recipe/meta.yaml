@@ -1,0 +1,43 @@
+{% set name = "xicam.core" %}
+{% set version = "2.1.11" %}
+{% set sha256 = "ea8db81122ab3fe5e47731e8e15abcf1686f8d4de610e3aaeace487ef608c744" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: https://github.com/synchrotrons/Xi-cam.core/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  noarch: "python"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv "
+
+requirements:
+  host:
+    - python >=3.6
+    - pip
+  run:
+    - python >=3.6
+    - dask
+    - databroker
+    - distributed
+    - pathlib
+
+test:
+  imports:
+    - xicam.core
+    - xicam.core.data
+    - xicam.core.execution
+    - xicam.core.msg
+
+about:
+  home: "https://github.com/lbl-camera/Xi-cam.core"
+  license: BSD 3-clause
+  license_family: BSD
+  license_file: LICENSE.md
+  summary: The CAMERA platform for synchrotron data management, visualization, and reduction.
+  description: |
+    The xicam.core package contains all backend code of the Xi-cam platform, as part of the xicam namespace package. For the gui components, see "xicam.gui".
