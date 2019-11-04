@@ -9,7 +9,9 @@ Feedstock license: BSD 3-Clause
 
 Summary: The CAMERA platform for synchrotron data management, visualization, and reduction.
 
-The xicam.core package contains all backend code of the Xi-cam platform, as part of the xicam namespace package. For the gui components, see "xicam.gui".
+The xicam.core package contains all backend code of the Xi-cam platform, as
+part of the xicam namespace package. For the gui components, see
+"xicam.gui".
 
 
 Current build status
