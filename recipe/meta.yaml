@@ -29,7 +29,6 @@ test:
   imports:
     - xicam.core
     - xicam.core.data
-    - xicam.core.execution
     - xicam.core.msg
 
 about:
