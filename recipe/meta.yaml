@@ -1,6 +1,6 @@
 {% set name = "xicam.core" %}
-{% set version = "2.1.11" %}
-{% set sha256 = "ea8db81122ab3fe5e47731e8e15abcf1686f8d4de610e3aaeace487ef608c744" %}
+{% set version = "2.2.1" %}
+{% set sha256 = "97b0c2a2016892370b7b9245017b7d8092b0aaaa81a9b7b7a842564c694d91f0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -24,7 +24,6 @@ requirements:
     - dask
     - databroker
     - distributed
-    - mesa-libgl-cos6-x86_64
     - pyqt >=5
     - qtpy
 
