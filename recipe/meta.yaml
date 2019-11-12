@@ -1,6 +1,6 @@
 {% set name = "xicam.core" %}
 {% set version = "2.2.2" %}
-{% set sha256 = "97b0c2a2016892370b7b9245017b7d8092b0aaaa81a9b7b7a842564c694d91f0" %}
+{% set sha256 = "87243239a068b6e7411840eaab94bec3ba65e9ae1cad3c165b37921caeccca00" %}
 
 package:
   name: "{{ name|lower }}"
